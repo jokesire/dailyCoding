@@ -9,12 +9,12 @@ bool sumExists(vector<int> lst, int k){
   vector<int> seen (k , 0);
   for(vector<int>::iterator it = lst.begin(); it != lst.end(); ++it){
     d = k - *it;
-    if(d < k){
-      if(seen[d] == 1){
-        return true;
+    if(d <= k){
+      if(seen[d] == 0){
+        seen[*it] = 1;
       }
       else{
-        seen[d] = 1
+        return true;
       }
     }
   }
