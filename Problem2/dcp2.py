@@ -27,8 +27,10 @@ def productOfAllButi(lst):
         index = index + 1
     return lst
 
+
 def main():
     print(productOfAllButi([1,2,3,4,5]))
+    print(bonusVersion([1,2,3,4,5]))
 
 
 # Main body
